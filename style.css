@@ -1,0 +1,327 @@
+﻿
+/* STRICTLY CHIC - LUXURY BRAND DESIGN */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #ffffff;
+    color: #171717;
+}
+
+/* NAVIGATION */
+
+header {
+    position: sticky;
+top: 0;
+z-index: 1000;
+    background: #ffffff;
+    padding: 25px 8%;
+    border-bottom: 1px solid #eee;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav img {
+    width: 240px;
+    height: 110px;
+    object-fit: contain;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 30px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #222;
+    font-size: 13px;
+    letter-spacing: 1px;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: #b89643;
+}
+
+/* HOMEPAGE */
+
+.hero {
+    min-height: 650px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 60px 20px;
+
+    background:
+    linear-gradient(rgba(0,0,0,0.55), rgba(0,0,0,0.55)),
+    url("images/fashion.jpeg");
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.hero-content {
+    max-width: 700px;
+}
+
+.small-heading {
+    color: #e5c46b;
+    font-size: 13px;
+    letter-spacing: 5px;
+    margin-bottom: 25px;
+}
+
+.hero h1 {
+    color: #ffffff;
+    font-size: 65px;
+    line-height: 1.2;
+    letter-spacing: 2px;
+    text-shadow: 2px 2px 8px rgba(0,0,0,0.9);
+}
+
+.hero-content > p:not(.small-heading) {
+    margin: 25px 0;
+    line-height: 1.8;
+    color: #ffffff;
+    letter-spacing: 1px;
+    text-shadow: 1px 1px 6px rgba(0,0,0,0.9);
+}
+
+.gold-button {
+    display: inline-block;
+    background: #b89643;
+    color: white;
+    padding: 16px 35px;
+    text-decoration: none;
+    font-size: 12px;
+    letter-spacing: 2px;
+    transition: 0.3s;
+}
+
+.gold-button:hover {
+    background: #171717;
+}
+
+/* COLLECTION */
+
+.collection {
+    padding: 90px 8%;
+    text-align: center;
+}
+
+.collection h2,
+.about h2 {
+    font-size: 32px;
+    margin-bottom: 45px;
+    letter-spacing: 2px;
+}
+
+.categories {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+}
+
+.category {
+    background: #f8f6f1;
+    padding: 65px 20px;
+    border: 1px solid #eee8da;
+}
+
+.category h3 {
+    color: #b89643;
+    margin-bottom: 15px;
+}
+
+.category p {
+    color: #666;
+    line-height: 1.7;
+}
+
+/* ABOUT */
+
+.about {
+    background: #f9f7f2;
+    text-align: center;
+    padding: 90px 20px;
+}
+
+.about p {
+    max-width: 600px;
+    margin: auto;
+    line-height: 2;
+    color: #666;
+}
+
+/* FOOTER */
+footer {
+    background: #171717;
+    color: #ffffff;
+    text-align: center;
+    padding: 60px 20px;
+}
+
+footer h2 {
+    color: #c5a253;
+    letter-spacing: 4px;
+    margin-bottom: 15px;
+    font-size: 25px;
+}
+
+footer p {
+    color: #dddddd;
+    font-size: 14px;
+    line-height: 2;
+    letter-spacing: 1px;
+}
+
+/* MOBILE DESIGN */
+
+@media (max-width: 700px) {
+    nav {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    nav ul {
+        gap: 15px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .hero h1 {
+        font-size: 42px;
+    }
+
+    .categories {
+        grid-template-columns: 1fr;
+    }
+}
+#contact .gold-button {
+    display: inline-block;
+    margin-top: 20px;
+    text-decoration: none;
+    transition: 0.3s ease;
+}
+
+#contact .gold-button:hover {
+    background: #25D366;
+    color: white;
+    border-color: #25D366;
+}
+.social-links {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 25px;
+}
+
+.social-links a {
+    display: inline-block;
+    padding: 13px 25px;
+    background: #c5a253;
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+    letter-spacing: 1px;
+    transition: 0.3s ease;
+}
+
+.social-links a:hover {
+    background: #171717;
+    color: #ffffff;
+}
+.location-link {
+    margin-top: 20px;
+}
+
+.location-link a {
+    display: inline-block;
+    padding: 13px 25px;
+    border: 1px solid #c5a253;
+    color: #c5a253;
+    text-decoration: none;
+    font-size: 13px;
+    letter-spacing: 1px;
+    transition: 0.3s ease;
+}
+
+.location-link a:hover {
+    background: #c5a253;
+    color: white;
+}
+@media (max-width: 600px) {
+    header {
+        padding: 15px 5%;
+    }
+
+    nav {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    nav img {
+        width: 170px;
+        height: 75px;
+    }
+
+    nav ul {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
+    }
+
+    nav ul li a {
+        font-size: 12px;
+    }
+
+    .hero {
+        min-height: 500px;
+        padding: 40px 15px;
+    }
+
+    .hero h1 {
+        font-size: 38px;
+    }
+
+    .hero-content > p:not(.small-heading) {
+        font-size: 14px;
+    }
+
+    .social-links {
+        flex-wrap: wrap;
+    }
+}
+.category a {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 24px;
+    border: 1px solid #c5a253;
+    color: #c5a253;
+    text-decoration: none;
+    font-size: 12px;
+    letter-spacing: 2px;
+    transition: 0.3s ease;
+}
+
+.category a:hover {
+    background: #c5a253;
+    color: #ffffff;
+}
